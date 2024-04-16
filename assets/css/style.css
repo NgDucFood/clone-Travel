@@ -1,0 +1,357 @@
+/* reset css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#main{
+    
+}
+
+
+#header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 80px;
+    background-color: #fff;
+    z-index: 10;
+    
+}
+
+#navUp{
+    display: flex;
+    justify-content: space-between;   
+}
+
+#navSe{
+    display: flex;
+}
+
+
+.edit-image {
+    height: 50px; /* Chiều cao mới của ảnh*/
+    width: auto; /* Chiều rộng  sẽ tự động điều chỉnh để giữ tỷ lệ khung hình  */
+    display: inline-block;  
+}
+
+.search-box{
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 10px;
+
+    border: none; /*tạo viền*/
+    border-radius: 12px; /*bo viền*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+   
+    width: 60%;
+    height: 74%; 
+    
+    color: #0CC0DF;
+    position: relative;
+}
+
+#searchbox{
+    color: #0CC0DF;
+}
+
+#searchbox::placeholder{
+    color: #0CC0DF; 
+}
+
+.searchIcon{
+    text-decoration: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #0CC0DF;
+    
+}
+
+input[type="text"] { /* select vào ô text*/
+    outline: none;
+    border: none;
+    width: 90%;
+}
+
+/* --------------------------------------------------------------- */
+
+#navHelp {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+#navHelp button[type="submit"] {
+    background-color: #3D919D;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px; /* Khoảng cách giữa nút và Trợ Giúp */
+   
+}
+
+#navHelp button[type="submit"]:hover {
+    background-color: #f2550c;
+}
+
+/* -------------------------------------------------------------------- */
+
+#navHelp a {
+    text-decoration: none;
+    color: #3D919D;
+    font-size: 14px;
+    list-style-type: none;
+     
+}
+
+#navHelp a:hover {
+    color: #f2550c;
+}
+
+
+#navDown li {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+#navDown .icon-arrow {
+    font-size: 12px;
+}
+
+#navDown li a {
+    text-decoration: none;
+    padding: 0 35px; /* Giảm khoảng cách giữa các mục menu */
+    display: block;
+    color: #0CC0DF;
+    font-size: 18px; /* Đặt kích thước chữ */
+}
+
+#navDown .subnavDown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 10px; 
+
+}
+
+.subnavDown li a{
+    padding: 0px;
+}
+
+#navDown > li:hover .subnavDown {
+    display: block;
+}
+
+#navDown .subnavDown li {
+    display: inline-block; /* Đặt mỗi mục con là inline-block để chúng nằm trên cùng một hàng */
+    margin-right: 10px; /* Tạo khoảng trống giữa các mục con */
+}
+
+#navDown > li:hover > a,
+#navDown .subnavDown li:hover a {
+    color: #f2550c;
+    background-color: #fff;
+    
+}
+
+
+#navDown .subnavDown li {
+    display: block;
+    margin: 0;
+}
+
+/* ================================================================== */
+
+#slider{
+    margin-top: 65px;
+    padding-top: 50% ;
+    background: url('/assets/css/img/AnhNen.png') top center / cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+/* ============================================================== */
+
+#sldUp{
+    position: absolute;
+    top: 80px;
+    
+    width: 700px;
+    height: 100px;
+    background-color: #3D919D;
+
+    border: none;
+    border-radius: 15px;
+    display: block;
+
+    align-items: center;
+    z-index: 9;
+    
+}
+
+
+#text-sldUp {
+    width: 700px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.navsldUp{
+    text-align: center; 
+}
+
+.navsldUp li{
+    display: inline-block;   
+}
+
+
+
+.navsldUp li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    
+}
+
+.navsldUp li a:hover{
+    color: #f2550c; 
+}
+/* ================================================================*/
+#sldDown{
+    width: 800px;
+    height: 150px;
+    background-color: #fff;
+    z-index: 8 ;
+
+    position: absolute;
+    top: 150px;
+    padding-top: 35px;
+
+    border: none;
+    border-radius: 15px;
+    display: block;
+    
+}
+
+#SelectSld{
+    display: flex;
+    justify-content: space-around;
+    margin: 1% 0;
+
+}
+
+.card{
+    border: 1px solid #ccc;
+    border-radius: 3px; 
+    height: 55px;
+    width: 245px;
+    padding: 5px;
+
+}
+
+.card h5{
+    font-weight: normal;
+}
+
+#ipCard1{
+    padding-top: 5px;
+
+}
+
+.listCard1{
+    display: none;
+}
+
+
+input[type="tCard1"] {
+    outline: none;
+    border: none;
+    width: 80%;
+}
+
+input[type="tCard"] {
+    outline: none;
+    border: none;
+    width: 40%;
+}
+
+
+.iconCard {
+    padding-right: 20px;
+}
+
+
+/* -------------------------------------- */
+#Sld {
+    display: flex;
+    justify-content:space-between;
+}
+
+#Text-sldD li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+#Text-sldD a{ 
+    text-decoration: none;
+    color: #0CC0DF;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+#Text-sldD li a:hover{
+   color: #f2550c;
+}
+
+#card-submit button[type="submit"] {
+    background-color: #0CC0DF;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+   
+}
+
+#card-submit button[type="submit"]:hover {
+    background-color: #f2550c;
+}
+
+
+
+
+
+#container{
+
+}
+
+#footer{
+
+}
+
